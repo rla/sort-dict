@@ -25,7 +25,7 @@ sort_dict(Key, Direction, List, Sorted):-
 asc(Key, Result, Dict1, Dict2):-
     get_dict_ex(Key, Dict1, Value1),
     get_dict_ex(Key, Dict2, Value2),
-    (   Value1 < Value2
+    (   Value1 @< Value2
     ->  Result = (<)
     ;   Result = (>)).
 

@@ -40,4 +40,17 @@ test(default):-
         vehicle{ year: 1954, make: cadillac, model: fleetwood }
     ].
 
+test(default_atom):-
+    List = [
+        vehicle{ year: 1926, make: chrysler, model: imperial },
+        vehicle{ year: 1954, make: cadillac, model: fleetwood },
+        vehicle{ year: 1953, make: chevrolet, model: corvette }
+    ],
+    sort_dict(model, List, Sorted), !,
+    Sorted = [
+        vehicle{ year: 1953, make: chevrolet, model: corvette },
+        vehicle{ year: 1954, make: cadillac, model: fleetwood },
+        vehicle{ year: 1926, make: chrysler, model: imperial }
+    ].
+
 :- end_tests(sort_dict).
