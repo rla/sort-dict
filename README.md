@@ -39,6 +39,7 @@ See <http://packs.rlaanemets.com/sort-dict/doc/>.
 
 ## Changelog
 
+ * 2014-04-22 v0.0.3 - uses dot notation instead of get_dict_ex/3.
  * 2014-02-13 v0.0.2 - uses `@<` for comparing.
  * 2014-02-04 v0.0.1
 
