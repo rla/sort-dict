@@ -23,15 +23,15 @@ sort_dict(Key, Direction, List, Sorted):-
         ;   throw(error(invalid_direction(Direction))))).
 
 asc(Key, Result, Dict1, Dict2):-
-    get_dict_ex(Key, Dict1, Value1),
-    get_dict_ex(Key, Dict2, Value2),
+    Value1 = Dict1.Key,
+    Value2 = Dict2.Key,
     (   Value1 @< Value2
     ->  Result = (<)
     ;   Result = (>)).
 
 desc(Key, Result, Dict1, Dict2):-
-    get_dict_ex(Key, Dict1, Value1),
-    get_dict_ex(Key, Dict2, Value2),
+    Value1 = Dict1.Key,
+    Value2 = Dict2.Key,
     (   Value2 < Value1
     ->  Result = (<)
     ;   Result = (>)).
