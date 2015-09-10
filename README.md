@@ -3,6 +3,8 @@
 Sorts list of dicts by key in the given direction. Duplicate entries
 are not removed.
 
+[![Build Status](https://travis-ci.org/rla/sort-dict.svg)](https://travis-ci.org/rla/sort-dict)
+
 ## Example
 
 Sorting some things by the key `weight` in the descending order:
